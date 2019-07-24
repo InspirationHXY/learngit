@@ -1,0 +1,50 @@
+#git repository directory address
+1.git@github.com:Username/Projectname.git  (ssh protocol)
+2.https://github.com/Username/Projectname.git  (https protocol)
+
+
+#creat and initialize a local repository
+1. make directory to creat a repository
+2. "git init"
+
+#add files into Git repository
+1. "git add <file>"
+2. "git commit -m <message>"
+
+#display the status of working dir
+1. "git status"
+2. if file has been modified, use "git diff" check contents
+
+#change-over version of modified file
+1. HEAD pointer points to current version, changeing version equal to change HEAD pointer
+2. "git reset --hard commit_id"
+   "git reset --hard HEAD^"  previous version
+   "git reset --hard HEAD^^" ..
+   "git reset --hard HEAD~100"
+3. "git log" check commit history
+4. "git reflog" check history commands
+
+#Working Directory and Repository
+1. working dir: file folder
+2. Repository:	".git" directory
+	workdir:	"git add->"		Stage(index) provisional district   @cancel@ "git checkout --file"
+	stage:		"git commit->"		Master and HEAD 		    @cancel@ "git reset HEAD <file>"
+
+#remove file
+1. "git rm"
+
+#remote repository
+1. creat github account
+2. creat SSH Key: shh-keygen -t rsa -C "youremail@example.com"
+3. add SSH Key: login GitHub->account setting->add SSH key
+
+
+#add remote repository
+1. creat repository in GitHub
+2. associate remote repository: "git remote add origin git@github.com:Username/Projectname.git"  --run command in shell
+3. push all contents: git push -u origin master
+4. update repository later: git push origin master
+
+#clone from remote repository
+1. repository
+2. "git clone git@github.com:Username/Projectname.git"
