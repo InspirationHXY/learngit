@@ -41,10 +41,28 @@
 
 #add remote repository
 1. creat repository in GitHub
-2. associate remote repository: "git remote add origin git@github.com:Username/Projectname.git"  --run command in shell
+2. associate a remote repository: "git remote add origin git@github.com:Username/Projectname.git"  --run command in shell
 3. push all contents: git push -u origin master
 4. update repository later: git push origin master
 
 #clone from remote repository
-1. repository
+1. remote repository
 2. "git clone git@github.com:Username/Projectname.git"
+
+#creat and merge branch
+1. check branch:	git branch
+2. creat branch:	git branch <name>
+3. switch branch:	git checkout <name> 
+4. creat and switch:	git checkout -b <name>
+5. merge a branch to current branch:	git merge <name>
+6. delete branch:	git branch -d <name>
+
+#fix conflict
+1. fix conflict manually
+2. git add
+3. git commit
+/* "git log --graph --pretty=oneline --abbrev-commit"  check branch with graph model*/
+
+#branch strategy.
+1. git merge --no-ff -m "***" <name>
+there is a commit history in log, --no-ff option.
