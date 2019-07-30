@@ -66,3 +66,18 @@
 #branch strategy.
 1. git merge --no-ff -m "***" <name>
 there is a commit history in log, --no-ff option.
+
+#Bug branch
+when you debug, we always creat a temporary branch to debug then merge to master final delete temp branch.
+but when you are doing other job, and have not finished yet. you can: save the scene, then do debug next recover the scene final continue to do
+1. save the scene
+   git stash
+2. check stash
+   git list stash
+3. recover the scene
+   a. git stash apply	## stash contents don't delete and use  "git stash drop" to delete
+   b. git stash pop     ## stash contents delete
+
+# multiple stash have been used
+1. "git stash list" to check   
+2. "git stash apply stash@{0}" to recover stash specified
