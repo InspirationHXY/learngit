@@ -16,7 +16,7 @@
 2. if file has been modified, use "git diff" check contents
 
 #change-over version of modified file
-1. HEAD pointer points to current version, changeing version equal to change HEAD pointer
+1. HEAD pointer points to current version, changing version equal to change HEAD pointer
 2. "git reset --hard commit_id"
    "git reset --hard HEAD^"  previous version
    "git reset --hard HEAD^^" ..
@@ -27,15 +27,15 @@
 #Working Directory and Repository
 1. working dir: file folder
 2. Repository:	".git" directory
-	workdir:	"git add->"		Stage(index) provisional district   @cancel@ "git checkout --file"
-	stage:		"git commit->"		Master and HEAD 		    @cancel@ "git reset HEAD <file>"
+	workdir:	"git add->"		Stage(index) provisional district   @discard changes in working dir@ "git checkout --<file>"
+	stage:		"git commit->"		Master and HEAD 		    @unstage@ "git reset HEAD <file>"
 
 #remove file
 1. "git rm"
 
 #remote repository
 1. creat github account
-2. creat SSH Key: shh-keygen -t rsa -C "youremail@example.com"
+2. generate SSH Key: ssh-keygen -t rsa -C "youremail@example.com"
 3. add SSH Key: login GitHub->account setting->add SSH key
 
 
