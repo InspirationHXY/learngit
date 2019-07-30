@@ -81,3 +81,6 @@ but when you are doing other job, and have not finished yet. you can: save the s
 # multiple stash have been used
 1. "git stash list" to check   
 2. "git stash apply stash@{0}" to recover stash specified
+
+# develop a new featurr, best to creat a branch ******
+# use "git branch -D <name>" force delete a branch that has never been merged
