@@ -1,2 +1,3 @@
 test git remove operation
 study the multiple-user mode to solute problems
+get ready to begin a new life
